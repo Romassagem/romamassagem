@@ -13,6 +13,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/chat.css">
 
     <!-- Custom fonts for this template -->
     <link rel="shortcut icon" href="img/favicon.ico" />
@@ -30,6 +31,51 @@
   </head>
 
   <body id="page-top">
+     <!--Plugin Whatsapp-->
+<aside class="wcc-container" style="background: url('img/whatsapp_background.png');">
+    <div class="wcc-header">
+        <h4 class="wcc-title">BaterasBeat Whatsapp</h4>
+        <div class="wcc-close-chat">
+            X
+        </div>
+    </div>
+    <div class="wcc-body">
+        <div class="wcc-msg">Olá, tudo bem? </div>
+        <div class="wcc-msg">Tem alguma dúvida, ou gostaria de mais informações?</div>
+    </div>
+    <div class="wcc-msg-container">
+        <form class="chat-mobile" action="https://api.whatsapp.com/send" id="wcc-form" target="_blank">
+           <div id="wcc-form-msg">
+               <input type="text" name="text" placeholder="Mensagem">
+               <input type="text" name="phone" value="5511961714169" hidden="true">
+           </div>      
+           <div class="wcc-btn-send-container">
+               <button id="wcc-btn-send" type="send">
+                   <img src="img/send.png" alt="">
+               </button>
+           </div>                  
+        </form>
+        
+        <form class="chat-desktop" action="https://web.whatsapp.com/send" id="wcc-form" target="_blank">
+           <div id="wcc-form-msg">
+               <input type="text" name="text" placeholder="Mensagem">
+               <input type="text" name="phone" value="5511961714169" hidden="true">
+           </div>      
+           <div class="wcc-btn-send-container">
+               <button id="wcc-btn-send" type="send">
+                   <img src="img/send.png" alt="">
+               </button>
+           </div>                  
+        </form>
+    </div>
+</aside>
+
+<div>
+    <button class="float-button">
+        <img src="img/whatsapp-logo.png" alt="Logo Whatsapp" title="Click here to send a whatsapp message">
+    </button>
+</div>
+    <!--Plugin Whatsapp-->
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -55,7 +101,7 @@
             </li> 
               <li class="nav-item">
                   <a href="https://api.whatsapp.com/send?phone=5511961714169" target="_blank">
-                  <i class="fa fa-whatsapp" aria-hidden="true" style="margin-top: 10px; font-size: 30px"></i>
+                  <i class="fa fa-whatsapp" aria-hidden="true" style="margin-top: 10px; font-size: 30px; color: #2ecc71;"></i>
                   </a>
             </li>
           </ul>
@@ -201,9 +247,104 @@
           </div>
         </div>    
         <div class="row">
-        <div class="col-sm-2">
-        </div>
           <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/adora.jpg" alt="">
+              <h4>Adora</h4>
+              <p class="text-muted"></p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/rommaassagem/" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.instagram.com/romamassagem/" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>            
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/agata.jpg" alt="">
+              <h4>Ágata</h4>
+              <p class="text-muted"></p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/rommaassagem/" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.instagram.com/romamassagem/" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>            
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/amanda.jpg" alt="">
+              <h4>Amanda</h4>
+              <p class="text-muted"></p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/rommaassagem/" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.instagram.com/romamassagem/" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>            
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/camila.jpg" alt="">
+              <h4>Camila</h4>
+              <p class="text-muted"></p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/rommaassagem/" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.instagram.com/romamassagem/" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>            
+          </div>
+          
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/cris.jpg" alt="">
+              <h4>Cris</h4>
+              <p class="text-muted"></p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/rommaassagem/" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.instagram.com/romamassagem/" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>            
+          </div>          
+          
+        <div class="col-sm-4">
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="img/team/paloma.jpg" alt="">
               <h4>Paloma</h4>
@@ -221,7 +362,7 @@
                 </li>
               </ul>
             </div>            
-          </div>           
+          </div>                  
         <div class="col-sm-4">
             <div class="team-member">
 
@@ -244,28 +385,64 @@
 
     <!-- Contact -->
     <section id="maps" class="maps text-center" style="background-color: #222">
-      <div class="container">
+      <div class="container flex-container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase" style="color: white">Contato</h2>
             <h3 class="section-subheading text-muted">Entre em contato ou venha até nós.</h3>
+            <div class="container-contact100">
+
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">
+				<div class="wrap-input100 validate-input" data-validate="Entre com seu nome">
+					<input class="input100" type="text" name="name" placeholder="Nome">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Entre com seu email">
+					<input class="input100" type="text" name="email" placeholder="E-mail">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Entre com seu telefone">
+					<input class="input100" type="text" name="phone" placeholder="Telelfone">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Sua mensagem">
+					<textarea class="input100" name="message" placeholder="Sua mensagem"></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						<span>
+							<i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
+							Enviar
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
           </div>
         </div>
         <div class="row">
           <div class="col-lg-12">
               <div class="row">
                 <div class="col-md-12 push-md-6">
-                    <p class="text-muted"><b>Ligue ou entre em contato por whatsapp</b>&nbsp;&nbsp;
+                    <p class="text-muted" style="font-family: serif"><b>Ligue ou entre em contato por whatsapp</b>&nbsp;&nbsp;
                         <a href="https://api.whatsapp.com/send?phone=5511961714169" target="_blank">
                             <i class="fa fa-whatsapp" aria-hidden="true" style="margin-top: 10px; font-size: 30px"></i>
                         </a>
                     </p>
-                    <p class="text-muted"><b>Cell: +55 (11) 9 6171-4169</b></p>
+                    <p class="text-muted" style="font-family: serif"><b>Cell: +55 (11) 3476-2158 </b></p>
                     <br />
                         
-                    <p class="text-muted"><b>Endereço: Rua Roma, 636 - Lapa</b></p>
+                    <p class="text-muted" style="font-family: serif"><b>Endereço: Rua Roma, 636 - Lapa</b></p>
 
-                    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.2721687758617!2d-46.70283633454906!3d-23.52271140816219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef864eeaf1f9f%3A0x1ec87f90602d2d18!2sRua+Roma%2C+636+-+Lapa%2C+S%C3%A3o+Paulo+-+SP%2C+05050-090!5e0!3m2!1spt-BR!2sbr!4v1510791253384" width="300" height="150" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+                    <iframe class="iframe-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.2765244814623!2d-46.70502758502283!3d-23.522554684702232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef864eeaf1f9f%3A0x1ec87f90602d2d18!2sRua+Roma%2C+636+-+Lapa%2C+S%C3%A3o+Paulo+-+SP%2C+05050-090!5e0!3m2!1spt-BR!2sbr!4v1544438914796" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
               </div>
           </div>
@@ -641,6 +818,34 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
+    
+    <!-- WHATASAPP -->
+<script>
+    
+    jQuery(".float-button").click(function(){
+        jQuery(".wcc-container").fadeToggle('slow');
+        mostraMensagens();
+    });
+    jQuery(".wcc-close-chat").click(function(){
+        jQuery(".wcc-container").fadeOut('slow');
+    });
+    
+    function mostraMensagens(){
+        setTimeout(function(){
+            jQuery(".wcc-msg").each(function(i, el){
+                setTimeout(function(){
+                  jQuery(el).fadeIn(); 
+                  navigator.vibrate = navigator.vibrate || navigator.webkitVibrate ||   navigator.mozVibrate || navigator.msVibrate;
+                    if (navigator.vibrate) {
+                        navigator.vibrate([200, 50, 200]);
+                    }
+                }, 300 + (i*1500))                
+            })
+        }, 700)        
+    }
+</script>
+    
+    <!-- WHATASAPP -->
   </body>
 
 </html>

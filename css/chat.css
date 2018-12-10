@@ -1,0 +1,213 @@
+.wcc-container {
+    width: 340px;
+    min-height: 500px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: none;
+    position: fixed;
+    bottom: 13vh;
+    left: 3vw;
+    z-index: 9999999;
+}
+
+.wcc-header {
+    background: #128C7E;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;    
+}
+.wcc-close-chat{
+    color: white;
+    position: absolute;
+    right: 10%;
+    top: 14px;
+    font-size: 20px;
+    font-family: roboto;
+    cursor: pointer;
+}
+.wcc-title {
+    color: white;
+    font-size: 20px;
+    padding: 15px 0 !important;
+    margin: 0;
+    text-align: center;
+    font-weight: 400;
+}
+
+.wcc-body {
+    box-shadow: inset 0 8px 15px -5px rgba(20, 20, 20, .25);
+    font-weight: 400;
+    padding: 10px 15px;
+}
+
+.wcc-msg {
+    background: #fefefe;
+    display: inline-block;
+    margin: 10px;
+    padding: 20px 25px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: -2px 3px 5px 0px rgba(20, 20, 20, .3);
+}
+
+.wcc-msg:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-right: solid #fefefe 18px;
+    border-bottom: solid transparent 30px;
+    position: absolute;
+    left: -7px;
+    top: 0;
+}
+
+.wcc-msg-container {
+    padding: 20px 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#wcc-form {
+    margin: 0;
+    display: flex;
+}
+
+#wcc-form-msg {
+    border-radius: 10px;
+    padding: 10px 25px;
+    margin-left: 10px;
+    font-size: 16px;
+    background: #fefefe;
+    border: none;
+    position: relative;
+    width: 70%;
+    height: 50px;
+    box-shadow: -2px 3px 4px 0px rgba(20, 20, 20, .3);
+    display: inline-block;
+}
+
+#wcc-form-msg:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-right: solid #fefefe 18px;
+    border-bottom: solid transparent 30px;
+    position: absolute;
+    left: -7px;
+    top: 0;
+}
+
+#wcc-form-msg input {
+    border: none;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    background: transparent;
+}
+
+.wcc-btn-send-container {
+    display: inline-block;
+    width: 15%;
+    vertical-align: middle;
+}
+
+#wcc-btn-send {
+    background: #128C7E;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0px 0px 6px 1px rgba(20, 20, 20, .3);
+    transition: all .5s, box-shadow .7s;
+}
+
+#wcc-btn-send:hover {
+    transform: scale(.95);
+    box-shadow: none;
+}
+
+#wcc-btn-send img {
+    width: 100%;
+}
+
+/*Floating button*/
+.float-button {
+    background: none;
+    border: none;
+    transition: all .5s;
+    position: fixed;
+    bottom: 3vh;
+    left: 3vw;
+    z-index: 99999;    
+}
+
+.float-button img {
+    background: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px 0px rgba(40, 40, 40, .3);
+    border-radius: 50%;
+    transition: all .5s;
+}
+
+#wcc-btn-send{
+    line-height: 0;
+}
+
+.float-button:hover img {
+    transform: scale(.95);
+    box-shadow: none;    
+}
+.float-button:hover, .float-button:active, .float-button:focus{
+    background: transparent;
+    outline: 0;
+}
+
+.wcc-msg{
+    display: none;
+}
+
+.chat-mobile{
+    display: none!important;
+}
+
+.chat-desktop{
+    display: block!important;
+}
+
+@media screen and (max-width: 760px){
+    
+.chat-mobile{
+    display: block!important;
+}
+
+.chat-desktop{
+    display: none!important;
+}
+    
+}
+
+@media (max-width: 442px){    
+    .wcc-container{
+        width: 90vw;
+        min-height: auto;
+        height: 70vh;
+        bottom: 90px;
+    }
+    .wcc-btn-send-container{
+        margin-left: 5%;
+        width: 18%;
+    }
+    .float-button{
+        bottom: 10px;
+    }
+    .float-button img{
+        width: 40px;
+        height: auto;
+    }
+}
